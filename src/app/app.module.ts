@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginPage } from './LoginPage/loginpage.component';
 import { HomePage } from './HomePage/homepage.component';
 import { TopBar } from './TopBar/topbar.component';
+import { Footer } from './Footer/footer.component';
 
 @NgModule({
 
@@ -14,15 +15,15 @@ import { TopBar } from './TopBar/topbar.component';
     AppComponent,
     LoginPage,
     HomePage,
-    TopBar
+    TopBar,
+    Footer,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      { path: '', component: AppComponent },
+      { path: '', component: HomePage },
       { path: 'login', component: LoginPage },
-      { path: 'home', component: HomePage },
     ])
   ],
   providers: [],
