@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+  
+  .moviepage {
+    animation:mymove 0s infinite;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    -webkit-animation:mymove 7s infinite;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:1;
+  }
+
+
+  .main-content {
+    display:flex;
+  }
+
+  .poster {
+    margin-left: 120px;
+  }
+
+  .text {
+    margin-left: 120px;
+    margin-bottom: 50px;
+    font-size: 70px;
+    font-family: 'Akshar', sans-serif;
+  }
+  
+  .photo-gallery {
+    display:flex;
+    margin-top: 155px;
+  }
+
+  .photo {
+    width:30%;
+  }
+
+
+  .description {
+    display: block;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 575px) {
+    .poster {
+      margin-left: 100px;
+      width: 50%;
+    }
+
+    .text {
+      margin-left: 20px;
+    }
+
+    .main-content {
+      display: block;
+    }
+
+    .photo-gallery {
+      display: none
+    }
+  }

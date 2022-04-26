@@ -8,6 +8,7 @@ import { LoginPage } from './LoginPage/loginpage.component';
 import { HomePage } from './HomePage/homepage.component';
 import { TopBar } from './TopBar/topbar.component';
 import { Footer } from './Footer/footer.component';
+import { MoviePage } from './MoviePage/moviepage.component';
 
 @NgModule({
 
@@ -17,6 +18,7 @@ import { Footer } from './Footer/footer.component';
     HomePage,
     TopBar,
     Footer,
+    MoviePage,
   ],
   imports: [
     BrowserModule,
@@ -24,6 +26,7 @@ import { Footer } from './Footer/footer.component';
     RouterModule.forRoot([
       { path: '', component: HomePage },
       { path: 'login', component: LoginPage },
+      { path: 'moviepage', component: MoviePage}
     ])
   ],
   providers: [],
