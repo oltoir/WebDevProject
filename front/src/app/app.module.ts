@@ -9,9 +9,9 @@ import { HomePage } from './HomePage/homepage.component';
 import { TopBar } from './TopBar/topbar.component';
 import { Footer } from './Footer/footer.component';
 import { MoviePage } from './MoviePage/moviepage.component';
+import { MovieItem } from './MovieItem/movie-item.component';
 
 @NgModule({
-
   declarations: [
     AppComponent,
     LoginPage,
@@ -19,6 +19,7 @@ import { MoviePage } from './MoviePage/moviepage.component';
     TopBar,
     Footer,
     MoviePage,
+    MovieItem,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +27,7 @@ import { MoviePage } from './MoviePage/moviepage.component';
     RouterModule.forRoot([
       { path: '', component: HomePage },
       { path: 'login', component: LoginPage },
-      { path: 'moviepage', component: MoviePage}
+      { path: 'movie/:movieId', component: MoviePage}
     ])
   ],
   providers: [],

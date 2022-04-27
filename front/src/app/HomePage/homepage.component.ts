@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { movies } from '../movies';
 
 @Component({
   selector: 'app-homepage',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomePage {
-  title = 'angular-tour-of-heroes';
+  movies = movies;
 }

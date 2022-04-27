@@ -21,91 +21,14 @@
 
     <div class="trending">
 
-      <div class="cards" >
-        <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BNjI4ZTQ1OTYtNTI0Yi00M2EyLThiNjMtMzk1MmZlOWMyMDQwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UY720_.jpg" alt="Card image cap">
-        <div class="card-container">
-          <h5 class="card-title">Death on the Nile</h5>
-          <p class="card-text">Rating: 7/10 <span class="fa fa-star checked" style="color: #fc9403"></span></p>
-          <p class="card-text">Genre: Crime</p>
-          <a [routerLink]="['/moviepage']" class="btn btn-primary" style="color:white; margin-top: 20px;">Watch</a>
-        </div>
-      </div>
-
-      <div class="cards" >
-        <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BNjI4ZTQ1OTYtNTI0Yi00M2EyLThiNjMtMzk1MmZlOWMyMDQwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UY720_.jpg" alt="Card image cap">
-        <div class="card-container">
-          <h5 class="card-title">Death on the Nile</h5>
-          <p class="card-text">Rating: 7/10 <span class="fa fa-star checked" style="color: #fc9403"></span></p>
-          <p class="card-text">Genre: Crime</p>
-          <a [routerLink]="['/moviepage']" class="btn btn-primary" style="color:white; margin-top: 20px;">Watch</a>
-        </div>
-      </div>
-
-      <div class="cards" >
-        <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BNjI4ZTQ1OTYtNTI0Yi00M2EyLThiNjMtMzk1MmZlOWMyMDQwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UY720_.jpg" alt="Card image cap">
-        <div class="card-container">
-          <h5 class="card-title">Death on the Nile</h5>
-          <p class="card-text">Rating: 7/10 <span class="fa fa-star checked" style="color: #fc9403"></span></p>
-          <p class="card-text">Genre: Crime</p>
-          <a [routerLink]="['/moviepage']" class="btn btn-primary" style="color:white; margin-top: 20px;">Watch</a>
-        </div>
-      </div>
-
-      <div class="cards" >
-        <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BNjI4ZTQ1OTYtNTI0Yi00M2EyLThiNjMtMzk1MmZlOWMyMDQwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UY720_.jpg" alt="Card image cap">
-        <div class="card-container">
-          <h5 class="card-title">Death on the Nile</h5>
-          <p class="card-text">Rating: 7/10 <span class="fa fa-star checked" style="color: #fc9403"></span></p>
-          <p class="card-text">Genre: Crime</p>
-          <a [routerLink]="['/moviepage']" class="btn btn-primary" style="color:white; margin-top: 20px;">Watch</a>
-        </div>
-      </div>
+      <app-movie-item *ngFor="let movie of movies" [movie] = "movie"></app-movie-item>
   
-  </div>
+    </div>
 
   <p id="trending-text" style="margin-top: 50px;margin-bottom: 10px;">Favorite</p>
 
 
     <div class="trending" style="margin-bottom: 200px;">
-
-      <div class="cards" >
-        <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BNjI4ZTQ1OTYtNTI0Yi00M2EyLThiNjMtMzk1MmZlOWMyMDQwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UY720_.jpg" alt="Card image cap">
-        <div class="card-container">
-          <h5 class="card-title">Death on the Nile</h5>
-          <p class="card-text">Rating: 7/10 <span class="fa fa-star checked" style="color: #fc9403"></span></p>
-          <p class="card-text">Genre: Crime</p>
-          <a [routerLink]="['/moviepage']" class="btn btn-primary" style="color:white; margin-top: 20px;">Watch</a>
-        </div>
-      </div>
-
-      <div class="cards" >
-        <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BNjI4ZTQ1OTYtNTI0Yi00M2EyLThiNjMtMzk1MmZlOWMyMDQwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UY720_.jpg" alt="Card image cap">
-        <div class="card-container">
-          <h5 class="card-title">Death on the Nile</h5>
-          <p class="card-text">Rating: 7/10 <span class="fa fa-star checked" style="color: #fc9403"></span></p>
-          <p class="card-text">Genre: Crime</p>
-          <a [routerLink]="['/moviepage']" class="btn btn-primary" style="color:white; margin-top: 20px;">Watch</a>
-        </div>
-      </div>
-
-      <div class="cards" >
-        <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BNjI4ZTQ1OTYtNTI0Yi00M2EyLThiNjMtMzk1MmZlOWMyMDQwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UY720_.jpg" alt="Card image cap">
-        <div class="card-container">
-          <h5 class="card-title">Death on the Nile</h5>
-          <p class="card-text">Rating: 7/10 <span class="fa fa-star checked" style="color: #fc9403"></span></p>
-          <p class="card-text">Genre: Crime</p>
-          <a [routerLink]="['/moviepage']" class="btn btn-primary" style="color:white; margin-top: 20px;">Watch</a>
-        </div>
-      </div>
-
-      <div class="cards" >
-        <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BNjI4ZTQ1OTYtNTI0Yi00M2EyLThiNjMtMzk1MmZlOWMyMDQwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UY720_.jpg" alt="Card image cap">
-        <div class="card-container">
-          <h5 class="card-title">Death on the Nile</h5>
-          <p class="card-text">Rating: 7/10 <span class="fa fa-star checked" style="color: #fc9403"></span></p>
-          <p class="card-text">Genre: Crime</p>
-          <a [routerLink]="['/moviepage']" class="btn btn-primary" style="color:white; margin-top: 20px;">Watch</a>
-        </div>
-      </div>
-  </div>
+      <app-movie-item *ngFor="let movie of movies" [movie] = "movie"></app-movie-item>
+    </div>
 
