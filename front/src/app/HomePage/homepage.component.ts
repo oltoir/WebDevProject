@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { movies } from '../movies';
+import { movies } from '../models';
 
 @Component({
   selector: 'app-homepage',

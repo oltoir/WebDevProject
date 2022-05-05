@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Movie,movies } from '../movies';
+import { Movie,movies } from '../models';
 
 
 @Component({

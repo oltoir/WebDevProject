@@ -1,17 +1,12 @@
   <div class="moviepage" style="margin-top: 100px; margin-bottom: 300px;">
     <div class="main-content">
-      <img class="poster" src="{{movie?.poster}}" style="width: 30%;" />
+      <img class="poster" src="{{movie?.cover}}" style="width: 30%;" />
         <div class="description" style="margin-left: 50px;">
           <p class="text" style="margin-left: 0px; margin-bottom: 10px"> {{movie?.name}}</p>
           <p>Genre: {{movie?.genre}} </p>
-          <p>Timing: {{movie?.timing}} </p>
+          <p>Timing: {{movie?.length}} </p>
           <p style="font-size: 50px">Storyline</p>
-          <p>{{movie?.storyline}}</p>
-            <div class="photo-gallery">
-                <img class="photo" src="{{movie?.photo_1}}" />
-                <img class="photo" src="{{movie?.photo_2}}" style="margin-left: 10px" />
-                <img class="photo" src="{{movie?.photo_3}}" style="margin-left: 10px" />
-            <div>
+          <p>{{movie?.description}}</p>
         </div>
     </div>
   </div>

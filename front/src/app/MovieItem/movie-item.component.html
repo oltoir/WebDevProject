@@ -1,8 +1,8 @@
 <div class="cards" >
-  <img class="card-img-top" src="{{movie.poster}}"  alt="Card image cap">
+  <img class="card-img-top" src="{{movie.cover}}"  alt="Card image cap">
   <div class="card-container">
     <h5 class="card-title">{{movie.name}}</h5>
-    <p class="card-text">Rating: {{movie.rating}}/10 <span class="fa fa-star checked" style="color: #fc9403"></span></p>
+    <p class="card-text">Rating: {{movie.rate}}/10 <span class="fa fa-star checked" style="color: #fc9403"></span></p>
     <p class="card-text">Genre: {{movie.genre}}</p>
     <a [routerLink]="['/movie', movie.id]" class="btn btn-primary" style="color:white; margin-top: 20px;">Watch</a>
   </div>
